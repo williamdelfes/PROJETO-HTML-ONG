@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG TransformAção - Cadastro de Voluntário</title> 
+</head>
+<body>
+    
+    <header>
+        <h1>ONG TransformAção</h1> 
+        
+        <nav>
+            <a href="index.html">Início</a> | 
+            <a href="projetos.html">Projetos Sociais</a> | 
+            <a href="cadastro.html">Seja Voluntário</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro de Voluntário</h2>
+            <p>Preencha os dados abaixo para darmos início ao seu processo de voluntariado.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo"><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com"><br><br>
+                    
+                    <label for="nasc">Data de Nascimento:</label><br>
+                    <input type="date" id="nasc" name="nasc" required><br><br>
+
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" 
+                           pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato exigido: 000.000.000-00" required><br><br>
+                    
+                    <label for="tel">Telefone:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="(XX) XXXXX-XXXX" 
+                           pattern="\(\d{2}\) \d{5}-\d{4}" title="Formato exigido: (99) 99999-9999" required><br><br>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" 
+                           pattern="\d{5}-\d{3}" title="Formato exigido: 00000-000" required><br><br>
+
+                    <label for="endereco">Endereço Completo (Rua, Número, Bairro):</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
+
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="cidade" required><br><br>
+
+                    <label for="estado">Estado:</label><br>
+                    <select id="estado" name="estado" required>
+                        <option value="">-- Selecione o Estado --</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PR">Paraná</option>
+                        </select>
+                </fieldset>
+
+                <br>
+                <button type="submit">Finalizar Cadastro</button>
+            </form>
+        </section>
+        </main>
+
+    <footer>
+        <p>Email: contato@ong.org.br | Telefone: (11) 99999-0000</p>
+        <p>&copy; 2025 ONG TransformAção. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
