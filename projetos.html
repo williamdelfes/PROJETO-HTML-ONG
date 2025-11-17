@@ -3,62 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/design-system.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>ONG TransformAção - Projetos e Doações</title> 
 </head>
 <body>
     
     <header>
-        <h1>ONG TransformAção</h1> 
-        
-        <nav>
-            <a href="index.html">Início</a> | 
-            <a href="projetos.html">Projetos Sociais</a> | 
-            <a href="cadastro.html">Seja Voluntário</a>
-        </nav>
+        <div class="container">
+            <h1>ONG TransformAção</h1> 
+            
+            <button id="menu-toggle" class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+                <span class="sr-only">Abrir Menu</span>
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Início</a> | 
+                <a href="projetos.html">Projetos Sociais</a> | 
+                <a href="cadastro.html">Seja Voluntário</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Nossos Projetos de Impacto Social</h2>
-            <p>Conheça as iniciativas que transformam a vida de centenas de pessoas anualmente. Todo projeto é acompanhado por indicadores e relatórios de transparência.</p>
+        <div class="container">
+            <section style="grid-column: 1 / span 12;">
+                <h2>Nossos Projetos de Impacto Social</h2>
+                <p>Conheça as iniciativas que transformam a vida de centenas de pessoas anualmente. Todo projeto é acompanhado por indicadores e relatórios de transparência.</p>
+                
+                <div class="card-grid">
+                    <article class="card-projeto">
+                        <h3>Projeto TecnoFuturo</h3>
+                        <img src="assets/img/tecnofuturo.jpg" alt="Jovens aprendendo a programar em sala de aula" width="600">
+                        <p>Oferece cursos de programação e design digital gratuitos para jovens de 16 a 25 anos, preparando-os para vagas de tecnologia de alto crescimento.</p>
+                        <a href="#" class="btn-primary">Saiba Mais</a>
+                    </article>
+
+                    <article class="card-projeto">
+                        <h3>Cozinha Solidária</h3>
+                        <img src="assets/img/cozinha-solidaria.jpg" alt="Voluntários preparando alimentos" width="600">
+                        <p>Distribuição de 500 refeições por semana para a população em situação de rua. Contamos com voluntários para a preparação e logística.</p>
+                        <a href="#" class="btn-primary">Detalhes</a>
+                    </article>
+                    
+                    <article class="card-projeto">
+                        <h3>Inclusão Digital 60+</h3>
+                        <img src="assets/img/inclusao-digital.jpg" alt="Idosos aprendendo a usar tablets" width="600">
+                        <p>Aulas básicas de informática e uso de smartphones para pessoas acima de 60 anos, promovendo autonomia e conexão familiar.</p>
+                        <a href="#" class="btn-primary">Conhecer</a>
+                    </article>
+                </div>
+                </section>
+
+            <hr style="grid-column: 1 / span 12;">
+
+            <section style="grid-column: 1 / span 12;">
+                <h2>Voluntariado: Mude uma Vida!</h2>
+                <p>Seu tempo e talento são o nosso maior recurso. Temos vagas para mentores, cozinheiros, professores e suporte administrativo.</p>
+                <p>Para se candidatar a uma vaga, acesse nossa página de cadastro:</p>
+                <p><a href="cadastro.html">**CLIQUE AQUI PARA FAZER SEU CADASTRO!**</a></p>
+            </section>
             
-            <article>
-                <h3>Projeto TecnoFuturo</h3>
-                <p>Oferece cursos de programação e design digital gratuitos para jovens de 16 a 25 anos, preparando-os para vagas de tecnologia de alto crescimento.</p>
-                <img src="assets/img/tecnofuturo.jpg" alt="Jovens aprendendo a programar em sala de aula" width="600">
-            </article>
+            <hr style="grid-column: 1 / span 12;">
 
-            <article>
-                <h3>Cozinha Solidária</h3>
-                <p>Distribuição de 500 refeições por semana para a população em situação de rua. Contamos com voluntários para a preparação e logística.</p>
-            </article>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Voluntariado: Mude uma Vida!</h2>
-            <p>Seu tempo e talento são o nosso maior recurso. Temos vagas para mentores, cozinheiros, professores e suporte administrativo.</p>
-            <p>Para se candidatar a uma vaga, acesse nossa página de cadastro:</p>
-            <p><a href="cadastro.html">**CLIQUE AQUI PARA FAZER SEU CADASTRO!**</a></p>
-        </section>
-        
-        <hr>
-
-        <section>
-            <h2>Como Doar e Apoiar</h2>
-            <p>Sua doação garante a continuidade de todos os nossos projetos. Você pode contribuir de três formas:</p>
-            <ul>
-                <li>**Doação Única:** Via PIX (chave: 999.888.777-66)</li>
-                <li>**Doação Mensal:** Assinatura via cartão de crédito ou débito automático.</li>
-                <li>**Doação de Bens:** Aceitamos alimentos não perecíveis e computadores usados.</li>
-            </ul>
-        </section>
-        </main>
+            <section style="grid-column: 1 / span 12;">
+                <h2>Como Doar e Apoiar</h2>
+                <p>Sua doação garante a continuidade de todos os nossos projetos. Você pode contribuir de três formas:</p>
+                <ul>
+                    <li>**Doação Única:** Via PIX (chave: 999.888.777-66)</li>
+                    <li>**Doação Mensal:** Assinatura via cartão de crédito ou débito automático.</li>
+                    <li>**Doação de Bens:** Aceitamos alimentos não perecíveis e computadores usados.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
 
     <footer>
-        <p>Email: contato@ong.org.br | Telefone: (11) 99999-0000</p>
-        <p>&copy; 2025 ONG TransformAção. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>Email: contato@ong.org.br | Telefone: (11) 99999-0000</p>
+            <p>&copy; 2025 ONG TransformAção. Todos os direitos reservados.</p>
+        </div>
     </footer>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

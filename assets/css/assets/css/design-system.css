@@ -1,0 +1,14 @@
+:root {
+    /* 1. PALETA DE CORES */
+    --cor-primaria: #007BFF;
+    --cor-secundaria: #28A745;
+    /* ... (restante das cores) ... */
+
+    /* 2. ESPAÇAMENTO MODULAR */
+    --espacamento-sm: 8px;
+    /* ... (restante dos espaçamentos) ... */
+
+    /* 3. TIPOGRAFIA */
+    --tamanho-titulo-1: 3rem;
+    /* ... (restante das fontes) ... */
+}
